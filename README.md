@@ -1,7 +1,7 @@
 ![](https://github.com/ImSynfield/Catpurrcino/blob/main/images/logo.png)
 # Autoria
 
-Idealização e Design: [@Synfield](https://github.com/ImSynfield "@Synfield") 🌻
+Idealização e Design: [@Synfield](https://github.com/ImSynfield "@Synfield") 🌻|
 Back-end e Front-end: [@tioscobs](https://github.com/tioscobs "@tioscobs") 🦭
 
 # Propósito do site
