@@ -1,0 +1,30 @@
+{
+    "drinks": {
+        "0": {
+            "name": "Pandelicious Drink",
+            "image": "pandelicious.jpg"
+        },
+        "1": {
+            "name": "Sneepy Drink",
+            "image": "sneepy.jpg"
+        },
+        "2": {
+            "name": "Homies Drink",
+            "image": "homies.jpg"
+        }
+    },
+    "lunchs": {
+        "0": {
+            "name": "Special Pancakes",
+            "image": "pancakes.jpg"
+        },
+        "1": {
+            "name": "StrawCake",
+            "image": "strawcake.jpg"
+        },
+        "2": {
+            "name": "Tiramisù",
+            "image": "tiramisu.jpg"
+        }
+    }
+}

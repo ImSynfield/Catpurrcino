@@ -153,7 +153,7 @@ hr {
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
 
-    transition: all 0.6s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
 
 }
 
@@ -210,8 +210,6 @@ hr {
     text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 1px;
 
     width: 90%;
-
-    border: 1px solid red;
 }
 
 .home-div h3{
@@ -221,8 +219,6 @@ hr {
     text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px;
 
     width: 90%;
-
-    border: 1px solid red;
 }
 
 .home-div input{
@@ -251,18 +247,18 @@ hr {
     color: rgba(255, 255, 255, 0.61);
 }
 
-        /* DIV SHOPS */
-        
+/* DIV SHOPS */
+
 .home-shops{
     width: 65%;
     height: 3.5rem;
     
     background-color: rgba(67, 23, 9, 0.36);
-
+    
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.5);
-
+    
     list-style-type: none;
     padding-left: 32px;
     padding-top: 10px;
@@ -283,10 +279,97 @@ hr {
     width: 100%;
     height: 100%;
     
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: 100%;
+    background-image: url(images/second-page.png);
+}
+
+    /* PRODUCTS LISTS */
+
+.products-lists{
+    width: 70%;
+    height: 100%;
     
+    background-image: url(images/wave.png);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/front-page.png);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.products-lists h1{
+    color: #FFDCC8;
+    font-family: 'Montserrat-Bold';
+    font-size: 3.2vw;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 1px;
+
+    width: 70%;
+
+    border: 1px solid red;
+}
+
+.products-lists h3{
+    color: white;
+    font-family: 'Montserrat-Bold';
+    font-size: 1.7vw;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px;
+
+    width: 90%;
+
+    border: 1px solid red;
+}
+
+    /* PROD-LIST */
+
+.prod-list{
+    width: 90%;
+    height: 26%;
+
+    display: flex;
+    justify-content:space-evenly;
+
+    border: 1px solid white;
+}
+
+    /* PRODUCT */
+
+.product {
+    width: 15%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: .2s ease-in-out;
+
+    border: 1px solid green;
+}
+
+.product:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.product h4{
+    color: white;
+    font-family: 'Montserrat-Bold';
+    font-size: 1.1vw;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px;
+
+    width: 90%;
+
+    border: 1px solid red;
+}
+
+.product img{
+    width: 100%;
+    height: 67%;
+
+    border-radius: 46px;
+    
+    border-style:dashed;
+    border-color: #F5E3DC;
 }
