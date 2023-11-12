@@ -197,6 +197,8 @@ hr {
 
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    overflow: auto;
 
     padding-left: 2rem;
 }
@@ -206,7 +208,7 @@ hr {
 .home-div h1{
     color: #FFDCC8;
     font-family: 'Montserrat-Bold';
-    font-size: 3.2vw;
+    font-size: 6.5vh;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 1px;
 
     width: 90%;
@@ -215,9 +217,9 @@ hr {
 .home-div h3{
     color: white;
     font-family: 'Montserrat-Bold';
-    font-size: 1.7vw;
+    font-size: 3.3vh;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px;
-
+    
     width: 90%;
 }
 
@@ -288,49 +290,53 @@ hr {
     /* PRODUCTS LISTS */
 
 .products-lists{
-    width: 70%;
+    width: 75%;
     height: 100%;
     
     background-image: url(images/wave.png);
     background-repeat: no-repeat;
     background-size: cover;
 
+    padding-left: 3%;
+
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    justify-content:center;
 }
 
 .products-lists h1{
     color: #FFDCC8;
     font-family: 'Montserrat-Bold';
-    font-size: 3.2vw;
+    font-size: 6.3vh;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 1px;
 
     width: 70%;
-
-    border: 1px solid red;
 }
 
 .products-lists h3{
     color: white;
     font-family: 'Montserrat-Bold';
-    font-size: 1.7vw;
+    font-size: 3.3vh;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px;
 
     width: 90%;
+}
 
-    border: 1px solid red;
+    /* PROD-LIST-FLEX */
+
+.prod-list-flex{
+    width: 90%;
+    height: 70%;
 }
 
     /* PROD-LIST */
 
 .prod-list{
     width: 90%;
-    height: 26%;
+    height: 34%;
 
     display: flex;
     justify-content:space-evenly;
-
-    border: 1px solid white;
 }
 
     /* PRODUCT */
@@ -344,8 +350,6 @@ hr {
     align-items: center;
 
     transition: .2s ease-in-out;
-
-    border: 1px solid green;
 }
 
 .product:hover{
@@ -356,20 +360,126 @@ hr {
 .product h4{
     color: white;
     font-family: 'Montserrat-Bold';
+    text-align: center;
     font-size: 1.1vw;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px;
-
+    
     width: 90%;
-
-    border: 1px solid red;
 }
 
 .product img{
     width: 100%;
     height: 67%;
-
-    border-radius: 46px;
+    
+    border-radius: 5vh;
     
     border-style:dashed;
     border-color: #F5E3DC;
+}
+
+/* AFFILIATE */
+
+#affiliate {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-size: cover;
+    background-image: url(images/last-page.png);
+}
+
+/* AFFILIATE DIV */
+
+.affiliate-div {
+    width: 45%;
+    height: 80%;
+    
+    border-radius: 50px;
+    
+    background-image: linear-gradient(#975E4D, #723420);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 2rem;
+}
+
+.affiliate-div h1{
+    color: #FFDCC8;
+    font-family: 'Montserrat-Bold';
+    font-size: 6.5vh;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 1px;
+    
+    width: 90%;
+}
+
+/* AFFILIATE FORM */
+
+.affiliate-form{
+    width: 90%;
+    height: 55%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 4;
+    grid-gap: 0px 2.5%;
+}
+
+/* AFFILIATE INPUT */
+.affiliate-input{
+    width: 95%;
+    height: 80%;
+}
+
+.affiliate-input h5{
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px;
+    font-family: 'Montserrat-Bold';
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.affiliate-input input{
+    width: 100%;
+    height: 70%;
+    
+    background-color: rgba(67, 23, 9, 0.36);
+    
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0px 7px 5px -3px rgba(0, 0, 0, 0.5);
+    
+    font-family: 'Montserrat-Bold';
+    color: white;
+    padding-left: 32px;
+    
+    border: none; 
+}
+
+.affiliate-input input::placeholder{
+    color: rgba(255, 255, 255, 0.61);
+}
+
+/* AFFILIATE SUBMIT */
+
+.affiliate-form button{
+    width: 95%;
+    height: 80%;
+
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 5px 10px -6px black;
+    
+    background-color: #D39775;
+    
+    /* Text */
+    font-size: medium;
+    font-family: 'Montserrat-Bold';
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px;
 }

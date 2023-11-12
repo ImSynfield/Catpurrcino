@@ -39,10 +39,40 @@
     <div id="products">
         <div class="products-lists">
             <h1>Curioso sobre o nosso cardápio? </h1>
-            <h3>Bebidas.</h3>
-            <div id="drinks" class="prod-list"></div>
-            <h3>Lanches.</h3>
-            <div id="lunchs" class="prod-list"></div>
+            <div class="prod-list-flex">
+                <h3>Bebidas.</h3>
+                <div id="drinks" class="prod-list"></div>
+                <h3>Lanches.</h3>
+                <div id="lunchs" class="prod-list"></div>
+            </div>
+        </div>
+    </div>
+    <div id="affiliate">
+        <div class="affiliate-div"> 
+            <h1>Interessado em se tornar afiliado?</h1>
+            <form class="affiliate-form" action="https://cedtec.com.br/formulario_aluno.php" method="post">
+                <div class="affiliate-input">
+                    <h5>Nome completo:</h5>
+                    <input name="Nome" maxlength="100" required placeholder="Nome" type="text">
+                </div>
+                <div class="affiliate-input">
+                    <h5>Email:</h5>
+                    <input name="Email" maxlength="100" required placeholder="exemplo@email.com" type="email">
+                </div>
+                <div class="affiliate-input">
+                    <h5>Celular:</h5>
+                    <input name="Celular" maxlength="100" required placeholder="(00) 0000-0000" type="tel" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})">
+                </div>
+                <div class="affiliate-input">
+                    <h5>CPF:</h5>
+                    <input name="CPF" maxlength="100" required placeholder="000.000.000-00" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                </div>
+                <div class="affiliate-input">
+                    <h5>Motivação:</h5>
+                    <input name="Motivação" maxlength="100" required placeholder="Escreva aqui" type="text">
+                </div>
+                <button type="submit">Envie seu requerimento!</button>
+            </form>
         </div>
     </div>
     <footer>
@@ -51,7 +81,7 @@
         <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lorem viverra, ultrices enim vel, rutrum nisi. Sed id semper lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque metus urna, sodales vel gravida tincidunt, condimentum vitae neque. Integer fringilla ut ligula vel mattis. Donec ac interdum mi. Curabitur vel risus accumsan, feugiat leo quis, finibus dolor. Phasellus volutpat lectus sit amet urna viverra lacinia.</p>
         <hr>
         <form class="feedback_form" action="https://cedtec.com.br/formulario_aluno.php" method="post">
-            <textarea name="feedback" rows="1" cols="1" maxlength="800" placeholder="Tem algum feedback? Escreva aqui!"></textarea>
+            <textarea required name="feedback" rows="1" cols="1" maxlength="800" placeholder="Tem algum feedback? Escreva aqui!"></textarea>
             <button type="submit">ENVIAR</button>
         </form>
     </footer>
